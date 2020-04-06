@@ -10,7 +10,7 @@ var (
 )
 
 func InitMySQL() (err error) {
-	dsn := "root:123456@(47.112.216.133:3306)/bubble?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "root:root@(192.168.1.1:3306)/bubble?charset=utf8mb4&parseTime=True&loc=Local"
 	DB, err = gorm.Open("mysql", dsn)
 	if err != nil {
 		return
